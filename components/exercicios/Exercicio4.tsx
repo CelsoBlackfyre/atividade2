@@ -1,30 +1,30 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "./atividades.css";
 
 const Exercicio4: React.FC = () => {
 	const [num, setNum] = useState<number>(0);
-	const [resultado, setResultado] = useState<string>("");
-	const [resultado2, setResultado2] = useState<string>("");
-	const [resultado3, setResultado3] = useState<string>("");
-	const [resultado4, setResultado4] = useState<string>("");
+	const [resultMult, setResultMult] = useState<string[]>([]);
+	const [resultDiv, setResultDiv] = useState<string[]>([]);
+	const [resultSom, setResultSom] = useState<string[]>([]);
+	const [resultSub, setResultSub] = useState<string[]>([]);
 
-	const arMult = [] || undefined;
-	const arDiv = [] || undefined;
-	const arSom = [] || undefined;
-	const arSub = [] || undefined;
 	const tabuada = () => {
+		const arMult: string[] = [];
+		const arDiv: string[] = [];
+		const arSom: string[] = [];
+		const arSub: string[] = [];
+
 		for (let i = 1; i <= 10; i++) {
-			setResultado(
-				`${arMult.push(num * i)} ${arDiv.push(num / i)} ${arSom.push(
-					num + i
-				)} ${arSub.push(num - i)}`
-			);
-			setResultado(`${arMult} | `);
-			setResultado2(`${arDiv} | `);
-			setResultado3(`${arSom}`);
-			setResultado4(`${arSub}`);
+			arMult.push(`${num} * ${i} = ${num * i}`);
+			arDiv.push(`${num} / ${i} = ${num / i}`);
+			arSom.push(`${num} + ${i} = ${num + i}`);
+			arSub.push(`${num} - ${i} = ${num - i}`);
 		}
+
+		setResultMult(arMult);
+		setResultDiv(arDiv);
+		setResultSom(arSom);
+		setResultSub(arSub);
 	};
 
 	return (
@@ -39,13 +39,13 @@ const Exercicio4: React.FC = () => {
 			/>
 			<button onClick={tabuada}>Verificar</button>
 			<p>Resposta Multiplicacao:</p>
-			<span>{resultado}</span>
+			<span>{resultMult.join(" | ")}</span>
 			<p>Resposta Divisao: </p>
-			<span>{resultado2}</span>
+			<span>{resultDiv.join(" | ")}</span>
 			<p>Resposta Soma: </p>
-			<span>{resultado3}</span>
+			<span>{resultSom.join(" | ")}</span>
 			<p>Resposta Subtracao:</p>
-			<span> {resultado4}</span>
+			<span>{resultSub.join(" | ")}</span>
 		</div>
 	);
 };
