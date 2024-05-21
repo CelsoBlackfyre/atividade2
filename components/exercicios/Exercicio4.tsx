@@ -9,10 +9,10 @@ const Exercicio4: React.FC = () => {
 	const [resultado3, setResultado3] = useState<string>("");
 	const [resultado4, setResultado4] = useState<string>("");
 
-	let arMult = [];
-	let arDiv = [];
-	let arSom = [];
-	let arSub = [];
+	const arMult = [] || undefined;
+	const arDiv = [] || undefined;
+	const arSom = [] || undefined;
+	const arSub = [] || undefined;
 	const tabuada = () => {
 		for (let i = 1; i <= 10; i++) {
 			setResultado(

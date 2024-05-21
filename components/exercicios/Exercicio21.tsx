@@ -1,6 +1,3 @@
-import React from "react";
-import { useState } from "react";
-
 function Exercicio21() {
 	let i = 0;
 	do {

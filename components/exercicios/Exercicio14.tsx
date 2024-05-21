@@ -1,6 +1,3 @@
-import React from "react";
-import { useState } from "react";
-
 function Exercicio14() {
 	const calcularMultiplos3 = () => {
 		let i = 0;

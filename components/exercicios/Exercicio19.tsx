@@ -1,11 +1,10 @@
-import React from "react";
 import { useState } from "react";
 
 function Exercicio19() {
 	const [arr, setArr] = useState<number[]>([]);
 	const loopDec = () => {
 		let i = 10;
-		let ar = [];
+		const ar = [];
 		while (i > 0) {
 			console.log(i);
 			ar.push(i);

@@ -1,6 +1,3 @@
-import React from "react";
-import { useState } from "react";
-
 function Exercicio16() {
 	const cincoPrimeirosNumeros = () => {
 		let i = 0;

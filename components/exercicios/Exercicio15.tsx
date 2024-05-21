@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 
 function Exercicio15() {
@@ -6,7 +5,7 @@ function Exercicio15() {
 
 	const numerosPares = () => {
 		let i = 0;
-		let par = [];
+		const par = [];
 		while (i <= 10) {
 			if (i % 2 === 0) {
 				par.push(i);

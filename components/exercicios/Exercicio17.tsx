@@ -1,9 +1,4 @@
-import React from "react";
-import { useState } from "react";
-
 function Exercicio17() {
-	const [resultado, setResultado] = useState<number>(0);
-
 	const arMul = [];
 	const arDiv = [];
 	const arSom = [];
@@ -43,7 +38,7 @@ function Exercicio17() {
 				<li key={item}>{item}</li>
 			))}
 			<div>_________________________________</div>
-			<p>Subtracao</p>
+
 			{arSub.map((item) => (
 				<li key={item}>{item}</li>
 			))}

@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
 function Exercicio8() {
 	const [palavra, setPalavra] = useState<string>("");
 	const [resultado, setResultado] = useState<string>("");

@@ -1,9 +1,6 @@
-import React from "react";
-import { useState } from "react";
-
 function Exercicio18() {
 	let i = 0;
-	let ar = [];
+	const ar = [];
 	while (i <= 5) {
 		ar.push(i * 2);
 		i++;

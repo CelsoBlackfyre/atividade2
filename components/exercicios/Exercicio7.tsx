@@ -1,8 +1,6 @@
-import React from "react";
 import { useState } from "react";
 
 const Exercicio7 = () => {
-	const [num, setNum] = useState<number>(0);
 	const [resultado, setResultado] = useState<number>(0);
 
 	function maiorArray() {
